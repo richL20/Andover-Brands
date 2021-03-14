@@ -17,18 +17,18 @@ html {
 
 .heading-underline {
   width: 5rem;
-  height: .25rem;
+  height: 0.25rem;
   background-color: black;
-  margin: 1.0rem auto;
+  margin: 1rem auto;
 }
 
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 5px;
+  right: 10px;
   z-index: 99;
-  font-size: 40px;
+  font-size: 35px;
   border: none;
   outline: none;
   background-color: transparent;
@@ -53,14 +53,14 @@ html {
 
 .fab:hover {
   color: darkgrey;
-  -webkit-transition-duration: .7s;
-          transition-duration: .7s;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
 }
 
 /*============= NAVIGATION =============*/
 .navbar {
   padding: 0.6rem 1rem;
-  font-size: 1.0rem;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
   background-color: lightgray;
   font-weight: 500;
@@ -93,14 +93,16 @@ html {
 /*============= HEADER =============*/
 .header-one {
   position: relative;
-  width: 100%;
   min-height: 100vh;
-  background: black;
+  width: 100%;
+  padding-top: 62px;
 }
 
 .header-one h1 {
   font-size: 1.95rem;
   padding: 0.625rem;
+  position: absolute;
+  z-index: 3;
 }
 
 .logo {
@@ -155,11 +157,12 @@ html {
   margin-left: 20px;
 }
 
-.whl-btn:hover, .ret-btn:hover {
+.whl-btn:hover,
+.ret-btn:hover {
   background-color: darkgray !important;
   color: black;
-  -webkit-transition-duration: .7s;
-          transition-duration: .7s;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
 }
 
 .whl-btn {
@@ -190,15 +193,15 @@ html {
 }
 
 #contact h4 {
-  padding-bottom: 75px;
+  padding-bottom: 25px;
   font-weight: 400;
 }
 
 #contact .heading-underline {
   width: 5rem;
-  height: .10rem;
+  height: 0.1rem;
   background-color: white;
-  margin: 1.0rem auto;
+  margin: 1rem auto;
 }
 
 /*============= FOOTER  =============*/
@@ -228,8 +231,8 @@ html {
     padding-top: 70px;
   }
   .carousel {
-    -webkit-transition-duration: .8s ease;
-            transition-duration: .8s ease;
+    -webkit-transition-duration: 0.8s ease;
+            transition-duration: 0.8s ease;
   }
   /** nav **/
   .navbar {
@@ -278,9 +281,18 @@ html {
   .hr-line {
     margin: 75px 0;
   }
+  #myBtn {
+    bottom: 20px;
+    right: 20px;
+  }
+  /*-- portfolio --*/
+  /*-- contact --*/
+  #contact h4 {
+    padding-bottom: 75px;
+    font-weight: 400;
+  }
 }
 
-/*-- portfolio --*/
 /*---Extra (xl) large devices (large desktops, 1200px and up)----*/
 /*===== ANIMATION KEY FRAMES======*/
 /*# sourceMappingURL=styles.css.map */

@@ -16,52 +16,47 @@ html {
   display: block;
 }
 .heading-underline {
-	width: 5rem;
-	height: .25rem;
-	background-color: black;
-	margin: 1.0rem auto;
-
+  width: 5rem;
+  height: 0.25rem;
+  background-color: black;
+  margin: 1rem auto;
 }
 #myBtn {
-	display: none;
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	z-index: 99;
-  font-size: 40px;
-	border: none;
-	outline:none;
-	background-color: transparent;
-	color:firebrick;
-	cursor: pointer;
-	padding: 2px;
-	border-radius: 100%;
-
-
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  z-index: 99;
+  font-size: 35px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: firebrick;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 100%;
 }
 
 #myBtn:hover {
-	color: indianred;
-
+  color: indianred;
 }
 .arrow {
   text-align: center;
   padding-top: 2.5rem;
 }
-.fab{
+.fab {
   cursor: pointer;
- 
 }
-.fab:hover{
- color:darkgrey;
-  transition-duration:.7s;
+.fab:hover {
+  color: darkgrey;
+  transition-duration: 0.7s;
 }
 /*============= NAVIGATION =============*/
 .navbar {
   padding: 0.6rem 1rem;
-  font-size: 1.0rem;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
-  background-color:lightgray;
+  background-color: lightgray;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -70,32 +65,34 @@ html {
 }
 .navbar-nav .nav-link {
   padding-top: 0.8rem;
-  color:black;
+  color: black;
 }
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-  color:white;
+  color: white;
 }
 .navbar-brand {
   color: black;
 }
 
 #home .fas {
-  color:white;
+  color: white;
   font-size: 1.6rem;
 }
 
 /*============= HEADER =============*/
-
 .header-one {
   position: relative;
+  min-height:100vh;
   width: 100%;
-  min-height: 100vh;
-  background: black;
+  padding-top: 62px;
 }
+
 .header-one h1 {
   font-size: 1.95rem;
   padding: 0.625rem;
+  position: absolute;
+  z-index: 3;
 }
 .logo {
   width: 90%;
@@ -120,83 +117,72 @@ html {
 
 /*============= PORTFOLIO =============*/
 
-#portfolio{
-  display:block;
+#portfolio {
+  display: block;
   padding-top: 100px;
-  min-height:100vh;
+  min-height: 100vh;
   background-color: whitesmoke;
+}
 
-}
-.soc{
+.soc {
   font-size: 1.75rem;
-  color:brown;
+  color: brown;
 }
-.soc-2{
+.soc-2 {
   font-size: 1.75rem;
-  color:black;
+  color: black;
 }
-.hr-line{
- margin:25px 0;
- 
+.hr-line {
+  margin: 25px 0;
 }
-.ret-btn{
+.ret-btn {
   background-color: black;
-  color:white;
-  border:2px solid black;
+  color: white;
+  border: 2px solid black;
   margin-left: 20px;
-
-
-
 }
-.whl-btn:hover, .ret-btn:hover{
-  background-color:darkgray !important;
-  color:black;
-  transition-duration: .7s;
+.whl-btn:hover,
+.ret-btn:hover {
+  background-color: darkgray !important;
+  color: black;
+  transition-duration: 0.7s;
 }
-.whl-btn{
-  background-color:white;
-  color:black;
-  border:2px solid black;
+.whl-btn {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
   margin-left: 20px;
-
 }
-
-
-
-
-
-
 
 /*============= NEWS =============*/
 /*============= CAREERS =============*/
-#careers{
-  width:100%;
+#careers {
+  width: 100%;
   min-height: 100vh;
 }
 
 /*============= CONTACT =============*/
-#contact{
+#contact {
   background-color: black;
-  color:white;
-  margin:50px 0 0 0;
+  color: white;
+  margin: 50px 0 0 0;
 }
-#contact h2{
+#contact h2 {
   padding-top: 10px;
   font-size: 2.75rem;
   font-weight: normal;
 }
-#contact h4{
-padding-bottom: 75px;
-font-weight: 400;
+#contact h4 {
+  padding-bottom: 25px;
+  font-weight: 400;
 }
 #contact .heading-underline {
-	width: 5rem;
-	height: .10rem;
-	background-color:white;
-	margin: 1.0rem auto;
-
+  width: 5rem;
+  height: 0.1rem;
+  background-color: white;
+  margin: 1rem auto;
 }
-  /*============= FOOTER  =============*/
+/*============= FOOTER  =============*/
 
 /*============= MEDIA QUERIES =============*/
 
@@ -225,44 +211,43 @@ font-weight: 400;
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding-top:70px;
+    padding-top: 70px;
   }
-  .carousel{
-  transition-duration: .8s ease;
+  .carousel {
+    transition-duration: 0.8s ease;
   }
   /** nav **/
-  .navbar{
-    padding:2px 25px;
+  .navbar {
+    padding: 2px 25px;
   }
   .navbar-nav .nav-link:hover {
-    color:black;
+    color: black;
   }
   .nav-link {
-		position: relative;
-	  text-transform: uppercase;
-		letter-spacing: 2px;
-	}
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
 
-	.nav-link::before {
-		content: "";
-		position: absolute;
-		left: 0;
-		bottom: -1px;
-		background-color:black;
-		width: 100%;
-		height: 2px;
-		transform: scaleX(0);
-		transform-origin: center;
-		transition: transform 650ms;
-	}
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: black;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 650ms;
+  }
 
-	.nav-link:hover::before {
-		transform: scaleX(1);
-	}
+  .nav-link:hover::before {
+    transform: scaleX(1);
+  }
 
- 
-  
   /*--heading--*/
+
   .head-hide {
     display: none;
   }
@@ -274,17 +259,24 @@ font-weight: 400;
     text-align: center;
     padding-top: 2.5rem;
   }
-  .hr-line{
-    
-   margin:75px 0;
+  .hr-line {
+    margin: 75px 0;
   }
-}
-/*-- portfolio --*/
+  #myBtn {
+    bottom: 20px;
+    right: 20px;
+  }
 
+/*-- portfolio --*/
+/*-- contact --*/
+#contact h4 {
+  padding-bottom: 75px;
+  font-weight: 400;
+}
+
+}
 /*---Extra (xl) large devices (large desktops, 1200px and up)----*/
 @media (min-width: 1200px) {
-  
-  
 }
 
 /*===== ANIMATION KEY FRAMES======*/
