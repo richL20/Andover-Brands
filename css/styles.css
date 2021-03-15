@@ -86,7 +86,9 @@ html {
 }
 
 .andover-logo {
-  width: 150px;
+  width:50%;
+  float:left;
+  clear:right;
 }
 
 #home .fas {
