@@ -24,10 +24,10 @@ html {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 5px;
+  bottom: 10px;
   right: 10px;
   z-index: 99;
-  font-size: 35px;
+  font-size: 40px;
   border: none;
   outline: none;
   background-color: transparent;
@@ -56,7 +56,7 @@ html {
   padding: 0.6rem 1rem;
   font-size: 1rem;
   letter-spacing: 0.1rem;
-  background-color: lightgray;
+  background-color:#E5E5E5;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -69,10 +69,14 @@ html {
 }
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-  color: white;
+  color:#7f7f7f;
 }
 .navbar-brand {
   color: black;
+}
+
+.andover-logo{
+ width:250px;
 }
 
 #home .fas {
@@ -85,7 +89,7 @@ html {
   position: relative;
   min-height:100vh;
   width: 100%;
-  padding-top: 62px;
+  padding-top:100px;
 }
 
 .header-one h1 {
@@ -211,7 +215,7 @@ html {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding-top: 70px;
+    padding-top: 78px;
   }
   .carousel {
     transition-duration: 0.8s ease;
