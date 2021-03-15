@@ -76,7 +76,7 @@ html {
 }
 
 .andover-logo{
- width:250px;
+ width:200px;
 }
 
 #home .fas {
@@ -192,9 +192,7 @@ html {
 
 /*---Small (sm) devices (landscape phones, 576px and up)----*/
 @media (min-width: 576px) {
-  .andover-logo{
-    width:175px;
-   }
+  
 }
 
 /*----Medium (md) devices (tablets, 768px and up)----*/
@@ -252,6 +250,10 @@ html {
   .nav-link:hover::before {
     transform: scaleX(1);
   }
+  .andover-logo{
+    width:250px;
+   }
+   
 
   /*--heading--*/
 

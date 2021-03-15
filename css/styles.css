@@ -86,7 +86,7 @@ html {
 }
 
 .andover-logo {
-  width: 250px;
+  width: 200px;
 }
 
 #home .fas {
@@ -270,6 +270,9 @@ html {
   .nav-link:hover::before {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
+  }
+  .andover-logo {
+    width: 250px;
   }
   /*--heading--*/
   .head-hide {
