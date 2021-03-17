@@ -1,10 +1,12 @@
 /*===== VARIABLES =======*/
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Poppins:wght@500&family=Roboto&display=swap");
 /*============= RESETS =============*/
 /*-- iPhone X Remove Gutters --*/
 html {
   padding: env(safe-area-inset);
   scroll-behavior: smooth;
   background-color: ivory;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*============= GLOBAL ==========*/
@@ -15,27 +17,32 @@ html {
   display: block;
 }
 
+h1, h2 {
+  font-family: 'Crimson Text', serif;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
 .heading-underline {
   width: 5rem;
   height: 0.25rem;
   background-color: black;
-  margin: 1rem auto;
+  margin: 1rem auto 5rem auto;
 }
 
 #myBtn {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 10px;
   z-index: 99;
-  font-size: 40px;
   border: none;
   outline: none;
   background-color: transparent;
   color: firebrick;
   cursor: pointer;
-  padding: 2px;
-  border-radius: 100%;
 }
 
 #myBtn:hover {
@@ -103,7 +110,7 @@ html {
 }
 
 .header-one h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 300;
   padding: 10px;
 }
@@ -118,17 +125,39 @@ html {
   position: absolute;
   text-align: center;
   color: whitesmoke;
-}
-
-.arrow-btn {
-  position: absolute;
-  top: 90%;
-  width: 20%;
-  margin: 0 40%;
+  font-family: 'Redressed', cursive;
 }
 
 .header-two {
   display: none;
+}
+
+.carousel.carousel-fade .carousel-item {
+  display: block;
+  opacity: 0;
+  -webkit-transition: opacity ease-out 1.7s;
+  transition: opacity ease-out 1.7s;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.carousel.carousel-fade .carousel-item.active {
+  opacity: 1 !important;
+}
+
+.carousel.carousel-fade .carousel-item:first-child {
+  top: auto;
+  position: relative;
+  -webkit-transition: opacity ease-out 1.7s;
+  transition: opacity ease-out 1.7s;
+}
+
+.carousel.carousel-fade .carousel-item:second-child {
+  top: auto;
+  position: relative;
+  -webkit-transition: opacity ease-out 1.7s;
+  transition: opacity ease-out 1.7s;
 }
 
 /*============= PORTFOLIO =============*/
@@ -136,7 +165,7 @@ html {
   display: block;
   padding-top: 100px;
   min-height: 100vh;
-  background-color: whitesmoke;
+  background-color: snow;
 }
 
 .soc {
@@ -150,6 +179,7 @@ html {
 }
 
 .hr-line {
+  border-top: 3px solid black;
   margin: 25px 0;
 }
 
@@ -175,11 +205,98 @@ html {
   margin-left: 20px;
 }
 
+/*============= ABOUT US ==========*/
+#about {
+  min-height: 100vh;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+[data-toggle="collapse"] i:before {
+  content: "\f068";
+}
+
+[data-toggle="collapse"].collapsed i:before {
+  content: "\f067";
+}
+
+#accordion .card-header {
+  margin-bottom: 8px;
+}
+
+#accordion .accordion-title {
+  position: relative;
+  display: block;
+  padding: 8px 0 8px 50px;
+  background: black;
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  text-align: left;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+#accordion .accordion-title i {
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  color: #fff;
+  background: radial-gradient(rgba(128, 128, 128, 0.8), black);
+  text-align: center;
+  border-right: 1px solid transparent;
+}
+
+#accordion .accordion-title:hover {
+  padding-left: 60px;
+  background: black;
+  color: #fff;
+}
+
+#accordion .accordion-title:hover i {
+  border-right: 1px solid #fff;
+}
+
+#accordion .accordion-body {
+  padding: 40px 55px;
+}
+
+#accordion .accordion-body ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#accordion .accordion-body li {
+  padding-left: 1.2rem;
+  text-indent: -1.2rem;
+}
+
+#accordion .accordion-body li:before {
+  content: "\f10a";
+  padding-right: 5px;
+  font-family: "Flaticon";
+  font-size: 16px;
+  font-style: normal;
+  color: #213744;
+}
+
 /*============= NEWS =============*/
+#news {
+  height: 100vh;
+}
+
 /*============= CAREERS =============*/
 #careers {
   width: 100%;
-  min-height: 100vh;
+  background-color: snow;
+  padding: 100px 0 100px 0;
 }
 
 /*============= CONTACT =============*/
@@ -208,6 +325,12 @@ html {
 }
 
 /*============= FOOTER  =============*/
+footer {
+  margin-top: 0;
+  background-color: black;
+  color: ghostwhite;
+}
+
 /*============= MEDIA QUERIES =============*/
 /*---Small (sm) devices (landscape phones, 576px and up)----*/
 /*----Medium (md) devices (tablets, 768px and up)----*/
@@ -292,6 +415,7 @@ html {
     right: 20px;
   }
   /*-- portfolio --*/
+  /*-- about --*/
   /*-- contact --*/
   #contact h4 {
     padding-bottom: 75px;
@@ -300,5 +424,4 @@ html {
 }
 
 /*---Extra (xl) large devices (large desktops, 1200px and up)----*/
-/*===== ANIMATION KEY FRAMES======*/
 /*# sourceMappingURL=styles.css.map */
