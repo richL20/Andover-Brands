@@ -7,7 +7,7 @@ html {
   padding: env(safe-area-inset);
   scroll-behavior: smooth;
   background-color: ivory;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 /*============= GLOBAL ==========*/
 .offset:before {
@@ -16,15 +16,18 @@ html {
   margin-top: -62px;
   display: block;
 }
-h1,h2  {
-  font-family: 'Crimson Text', serif;
+.title{
+  font-size:2.5rem;
+  text-align:center;
   
 }
-h3{
-  font-family: 'Poppins', sans-serif;
+
   
 
-}
+
+  
+
+
 .heading-underline {
   width: 5rem;
   height: 0.25rem;
@@ -86,7 +89,7 @@ h3{
 }
 
 .andover-logo{
- width:170px;
+ width:180px;
 }
 
 #home .fas {
@@ -158,8 +161,8 @@ h3{
 
 #portfolio {
   display: block;
-  padding-top: 100px;
-  min-height: 100vh;
+  padding:100px 0 100px 0;
+  min-height:auto;
   background-color:snow;
 }
 
@@ -198,86 +201,18 @@ h3{
 }
 /*============= ABOUT US ==========*/
 #about{
-  min-height:100vh;
+  min-height:auto;
   width:100%;
-  padding-bottom:100px;
+  padding:100px 0 100px 0;
+  
 }
-[data-toggle="collapse"] i:before {  
-  content: "\f068";
-}
+ 
 
-[data-toggle="collapse"].collapsed i:before {
-  content: "\f067";
-}
-
-#accordion {
-  .card-header{
-      margin-bottom: 8px;
-  }
-  .accordion-title{
-      position: relative;
-      display: block;
-      padding:8px 0 8px 50px;
-      background:black;
-      border-radius: 4px;
-      overflow: hidden;
-      text-decoration: none;
-      color: #fff;
-      font-size: 18px;
-      font-weight: 500;
-      width: 100%;
-      text-align: left;
-      transition: all .4s ease-in-out; 
-      i{
-          position: absolute;
-          width: 40px;
-          height: 100%;
-          left: 0;
-          top: 0;
-          color: #fff;
-          background: radial-gradient(rgba(gray, .8),black);
-          text-align: center;
-          border-right: 1px solid transparent;
-      }
-      &:hover{
-          padding-left: 60px;
-          background:black;
-          color: #fff;
-          
-          i {
-              border-right: 1px solid #fff;
-          }
-      }
-  }
-  .accordion-body{
-      padding: 40px 55px;
-
-      
-      ul {
-          list-style: none;
-          margin-left: 0;
-          padding-left: 0;
-      }
-      
-      li {
-          padding-left: 1.2rem;
-          text-indent: -1.2rem;
-
-          &:before {
-              content: "\f10a";
-              padding-right: 5px;
-              font-family: "Flaticon";
-              font-size: 16px;
-              font-style: normal;
-              color: #213744;
-          }
-      }
-  }
-}
 
 /*============= NEWS =============*/
 #news{
-  height: 100vh;
+  height:auto;
+  padding:100px 0 100px 0;
 }
 /*============= CAREERS =============*/
 #careers {
@@ -342,8 +277,13 @@ footer{
     display: block;
     position: relative;
     width: 100%;
-    min-height: 100vh;
-    padding-top: 78px;
+    height:auto;
+    padding-top:66px;
+  }
+  .title{
+    font-size:3rem;
+    text-align:center;
+    
   }
   .carousel {
     transition-duration: 0.8s ease;
@@ -378,7 +318,7 @@ footer{
     transform: scaleX(1);
   }
   .andover-logo{
-    width:250px;
+    width:225px;
    }
    
 
@@ -396,7 +336,7 @@ footer{
     padding-top: 2.5rem;
   }
   .hr-line {
-    margin: 75px 0;
+    margin: 70px 0;
   }
   #myBtn {
     bottom: 20px;
