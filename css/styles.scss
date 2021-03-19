@@ -1,5 +1,5 @@
 /*===== VARIABLES =======*/
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Poppins:wght@500&family=Roboto&display=swap');
+
 /*============= RESETS =============*/
 
 /*-- iPhone X Remove Gutters --*/
@@ -7,7 +7,7 @@ html {
   padding: env(safe-area-inset);
   scroll-behavior: smooth;
   background-color: ivory;
-  font-family: 'Poppins', sans-serif;
+  
 }
 /*============= GLOBAL ==========*/
 .offset:before {
@@ -23,7 +23,9 @@ html {
 }
 
   
-
+h2{
+  font-weight: 400;
+}
 
   
 
@@ -34,6 +36,13 @@ html {
   background-color: black;
   margin: 1rem auto 5rem auto;
   
+}
+.sub-underline{
+  width: 3rem;
+  height: 0.20rem;
+  background-color: black;
+  margin: 1rem auto 2rem auto;
+
 }
 #myBtn {
   display: none;
@@ -162,9 +171,15 @@ html {
 #portfolio {
   display: block;
   padding:100px 0 100px 0;
-  min-height:auto;
-  background-color:snow;
+  min-height:100vh;
+  background-color: ghostwhite;
+  
 }
+.bg-panel{
+  background-color:white;
+  border-radius:10px;
+}
+
 
 .soc {
   font-size: 1.75rem;
@@ -176,7 +191,7 @@ html {
 }
 .hr-line {
   border-top:3px solid black;
-  margin: 25px 0;
+  margin:15px 0;
 }
 .ret-btn {
   background-color: black;
@@ -201,11 +216,40 @@ html {
 }
 /*============= ABOUT US ==========*/
 #about{
-  min-height:auto;
+  min-height:100vh;
   width:100%;
   padding:100px 0 100px 0;
+  background-color: ghostwhite;
   
 }
+.hr-about{
+  border-top:1px solid black;
+}
+.card{
+  border:none;
+  border-radius:10px;
+  background-color:white;
+  color:black;
+}
+.map{
+  width:85%;
+  margin:auto;
+}
+.map-container-5{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  }
+  .map-container-5 iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  }
+
+
  
 
 
@@ -344,15 +388,24 @@ footer{
   }
 
 /*-- portfolio --*/
+.img-cov{
+  width:100%;
+  
+}
 /*-- about --*/
+.location{
+  border-left: 2px solid black;
+}
 
 /*-- contact --*/
 #contact h4 {
   padding-bottom: 75px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 }
 /*---Extra (xl) large devices (large desktops, 1200px and up)----*/
 @media (min-width: 1200px) {
+  
+  
 }
