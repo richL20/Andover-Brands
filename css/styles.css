@@ -41,13 +41,16 @@ h2 {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
+  width: 45px;
+  height: 45px;
+  bottom: 10px;
   right: 10px;
   z-index: 99;
   border: none;
   outline: none;
-  background-color: transparent;
-  color: firebrick;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
   cursor: pointer;
 }
 
@@ -109,6 +112,8 @@ h2 {
 
 /*============= HEADER =============*/
 .header-one {
+  background-color: transparent;
+  color: #666666;
   position: relative;
   min-height: 100vh;
   width: 100%;
