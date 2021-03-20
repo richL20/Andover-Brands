@@ -57,8 +57,8 @@ h2{
 	color: white;
 	cursor: pointer;
 	padding: 10px 12px;
-	
-	border-radius: 10%;
+border-radius: 10%;
+opacity:.6;
 }
 
 #myBtn:hover {
@@ -200,10 +200,10 @@ h2{
   margin:15px 0;
 }
 .ret-btn {
+  position: relative;
+  overflow: hidden;
   background-color: black;
-
-
-  color: white;
+  color:white;
   border: 2px solid black;
   margin-left: 20px;
 }
@@ -214,6 +214,8 @@ h2{
   transition-duration: 0.7s;
 }
 .whl-btn {
+  position: relative;
+  overflow: hidden;
   background-color: white;
   color: black;
   border: 2px solid black;
@@ -228,6 +230,7 @@ h2{
   background-color: ghostwhite;
   
 }
+
 .hr-about{
   border-top:1px solid black;
 }
@@ -391,6 +394,7 @@ footer{
   #myBtn {
     bottom: 20px;
     right: 20px;
+    opacity:1.0;
   }
 
 /*-- portfolio --*/
