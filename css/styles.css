@@ -41,21 +41,21 @@ h2 {
 #myBtn {
   display: none;
   position: fixed;
-  width: 45px;
-  height: 45px;
-  bottom: 10px;
+  bottom: 20px;
   right: 10px;
   z-index: 99;
+  font-size: 25px;
   border: none;
   outline: none;
-  background-color: red;
+  background-color: crimson;
   color: white;
-  border-radius: 50%;
   cursor: pointer;
+  padding: 10px 12px;
+  border-radius: 10%;
 }
 
 #myBtn:hover {
-  color: indianred;
+  background-color: darkred;
 }
 
 .arrow {

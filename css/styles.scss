@@ -45,27 +45,27 @@ h2{
 
 }
 #myBtn {
-  display: none;
-  position: fixed;
-  width:45px;
-  height: 45px;
-  bottom:10px;
-  right:10px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color:red;
-  color:white;
-  border-radius: 50%;
-  
-  cursor: pointer;
- 
-  
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	z-index: 99;
+	font-size: 25px;
+	border: none;
+	outline: none;
+	background-color: crimson;
+	color: white;
+	cursor: pointer;
+	padding: 10px 12px;
+	
+	border-radius: 10%;
 }
 
 #myBtn:hover {
-  color: indianred;
+	background-color: darkred;
+
 }
+
 .arrow {
   text-align: center;
   padding-top: 2.5rem;
