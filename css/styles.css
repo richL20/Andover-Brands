@@ -85,9 +85,10 @@ h2 {
 
 /******** Nav *********/
 .andover-logo {
-    width: 60%;
-    padding:0;
-  }
+  width: 50%;
+  padding-left: 0;
+}
+
 .navbar {
   background-color: #73808a;
 }
