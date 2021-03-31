@@ -1,151 +1,122 @@
-/*===== VARIABLES =======*/
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@500&family=Poppins:wght@400&family=Tangerine:wght@700&display=swap");
 
-/*============= RESETS =============*/
-
-/*-- iPhone X Remove Gutters --*/
+/******** Universal *********/
 html {
   padding: env(safe-area-inset);
   scroll-behavior: smooth;
-  background-color: ivory;
-  
 }
-/*============= GLOBAL ==========*/
+body {
+  background-color:white;
+  font-family: "Roboto", sans-serif;
+}
 .offset:before {
   content: "";
   height: 62px;
   margin-top: -62px;
   display: block;
 }
-.title{
-  font-size:2.5rem;
-  text-align:center;
-  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Catamaran", sans-serif;
 }
 
-  
-h2{
-  font-weight: 400;
+h1,
+h2 {
+  letter-spacing: 2px;
+  text-align: center;
 }
-
-  
-
-
 .heading-underline {
-  width: 5rem;
-  height: 0.25rem;
-  background-color: black;
-  margin: 1rem auto 5rem auto;
-  
-}
-.sub-underline{
   width: 3rem;
-  height: 0.20rem;
-  background-color: black;
-  margin: 1rem auto 2rem auto;
-
+  height: 0.25rem;
+  background-color: #111111;
+  margin: 1rem auto 5rem auto;
 }
+
+.sub-underline {
+  width: 2.5rem;
+  height: 0.2rem;
+  background-color: #111111;
+  margin: 1rem auto 2rem auto;
+}
+
 #myBtn {
-	display: none;
-	position: fixed;
-	bottom: 20px;
-	right: 10px;
-	z-index: 99;
-	font-size: 25px;
-	border: none;
-	outline: none;
-	background-color: crimson;
-	color: white;
-	cursor: pointer;
-	padding: 10px 12px;
-border-radius: 10%;
-opacity:.6;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: darkred;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  opacity: .8;
 }
 
 #myBtn:hover {
-	background-color: darkred;
-
+  background-color: crimson;
 }
-
 .arrow {
   text-align: center;
-  padding-top: 2.5rem;
 }
 .fab {
+  color: #111 !important;
+  font-size: 1.65rem;
   cursor: pointer;
 }
 .fab:hover {
-  color: darkgrey;
+  color: #aeb5b8 !important;
   transition-duration: 0.7s;
 }
-/*============= NAVIGATION =============*/
+
+/******** Nav *********/
+.nav-logo {
+  width: 200px;
+}
+
 .navbar {
-  padding: 0.6rem 1rem;
-  font-size: 1rem;
-  letter-spacing: 0.1rem;
-  background-color:#E5E5E5;
+  background-color: #73808a;
+}
+.nav-link {
+  color: ghostwhite !important;
+  position: relative;
+  font-size: 1.05rem;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
-.navbar-nav li {
-  padding-right: 0.8rem;
-}
-.navbar-nav .nav-link {
-  padding-top: 0.8rem;
-  color: black;
-}
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link:hover {
-  color:#7f7f7f;
-}
-.navbar-brand {
-  color: black;
-}
-
-.andover-logo{
- width:180px;
-}
-
-#home .fas {
-  color: white;
-  font-size: 1.6rem;
-}
-
-/*============= HEADER =============*/
+/******** Hero ********/
 .header-one {
-  background-color:transparent;
-  color:#666666;
-  position: relative;
-  min-height:100vh;
-  width: 100%;
-  padding-top:65px;
+  color: #cccccc;
+  padding-top: 100px;
+  min-height: 100vh;
 }
-.header-one h2{
-  font-size: 1.75rem;
-  font-weight:300;
-  padding:10px;
-
-
+.header-one h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 50px 20px 0 20px;
 }
 
-.phone-head{
-  width:85%;
-  margin:auto;
-}
-
-
-.caption {
-  top: 40%;
-  position: absolute;
-  text-align: center;
-  color: whitesmoke;
-  font-family: 'Redressed', cursive;
+.phone-header {
+  width: 85%;
+  margin: auto;
 }
 
 .header-two {
   display: none;
-
-
-
+}
+.logo-head {
+  position: relative;
+  z-index: 2;
+  justify-content: center;
 }
 .carousel.carousel-fade .carousel-item {
   display: block;
@@ -168,148 +139,218 @@ opacity:.6;
   position: relative;
   transition: opacity ease-out 1.7s;
 }
+.carousel {
+  transition-duration: 0.8s ease-in;
+}
 
-
-
-
-/*============= PORTFOLIO =============*/
-
+/******** Portfolio *****/
 #portfolio {
   display: block;
-  padding:100px 0 100px 0;
-  min-height:100vh;
-  background-color: ghostwhite;
+  padding: 150px 0 50px 0;
+  min-height: 100vh;
+  background-color: #eee;
+
+}
+
+#portfolio h4{
+  color:#666;
+  padding-bottom: 10px;
+  font-size: 1.6rem;
   
 }
-.bg-panel{
-  background-color:white;
-  border-radius:10px;
+#portfolio p{
+  color:#121212;
+  font-size: 1.15rem;
 }
 
 
-.soc {
-  font-size: 1.75rem;
-  color: brown;
-}
-.soc-2 {
-  font-size: 1.75rem;
-  color: black;
-}
 .hr-line {
-  border-top:3px solid black;
-  margin:15px 0;
+  border-top: 3px solid #111;
+  margin: 15px 0;
 }
 .ret-btn {
   position: relative;
   overflow: hidden;
-  background-color: black;
-  color:white;
-  border: 2px solid black;
+  background-color:#111;
+  color: ghostwhite !important;
+  border: 2px solid#111;
   margin-left: 20px;
+  text-decoration: none;
 }
 .whl-btn:hover,
 .ret-btn:hover {
-  background-color: darkgray !important;
-  color: black;
+  background-color: #73808A !important;
+  color: black !important;
   transition-duration: 0.7s;
+  text-decoration: none;
 }
 .whl-btn {
   position: relative;
   overflow: hidden;
-  background-color: white;
-  color: black;
-  border: 2px solid black;
+  background-color:ghostwhite;
+  color:#111 !important;
+  border: 2px solid #111;
   margin-left: 20px;
-  
 }
-/*============= ABOUT US ==========*/
-#about{
-  min-height:100vh;
-  width:100%;
-  padding:100px 0 100px 0;
-  background-color: ghostwhite;
-  
+.btns{
+  display: inline-block;
+}
+/******** About ********/
+#about {
+  min-height: 100vh;
+  width: 100%;
+  padding: 150px 0 0 0;
+  background-color:ghostwhite;
+
+}
+address{
+  text-align: left;
+  font-weight:600;
 }
 
-.hr-about{
-  border-top:1px solid black;
+.hr-about {
+  border-top: 1px solid black;
 }
 .card{
-  border:none;
-  border-radius:10px;
+  border: none;
+
   background-color:white;
-  color:black;
+  color: black;
 }
-.map{
-  width:85%;
-  margin:auto;
+/*===== BRANDS =====*/
+#brands {
+  min-height: 100vh;
+  width: 100%;
+  padding: 150px 0 100px 0;
 }
-.map-container-5{
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
+#brands{
+  background-color:#eee;
+  margin-bottom: 0;
+  
   }
-  .map-container-5 iframe{
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
-  }
-
-
- 
-
-
-/*============= NEWS =============*/
-#news{
-  height:auto;
-  padding:100px 0 100px 0;
+.card-1{
+  background-color:ghostwhite;
 }
-/*============= CAREERS =============*/
+.card{
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 7px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+.card:hover{
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
+}
+.brands {
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 90px
+}
+
+.brands_slider_container {
+  height: 130px;
+  border: solid 1px #e8e8e8;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  padding-left: 97px;
+  padding-right: 97px;
+  background: #fff
+}
+
+.brands_slider {
+  height: 100%;
+  margin-top: 50px
+}
+
+.brands_item {
+  height: 100%
+}
+
+.brands_item img {
+  max-width: 100%
+}
+
+.brands_nav {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 5px;
+  cursor: pointer
+}
+
+.brands_nav i {
+  color: #e5e5e5;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease
+}
+
+.brands_nav:hover i {
+  color: #676767
+}
+
+.brands_prev {
+  left: 40px
+}
+
+.brands_next {
+  right: 40px
+}
+
+
+
+/******** Careers ******/
 #careers {
   width: 100%;
-  background-color:snow;
-  padding:100px 0 100px 0;
+ min-height: 100vh;
+  padding: 150px 0 100px 0;
   
 }
+.img-hide {
+  display: none;
+}
 
-/*============= CONTACT =============*/
+/*===== CONTACT =====*/
 #contact {
-  background-color: black;
-  color: white;
-  margin: 50px 0 0 0;
-}
-#contact h2 {
-  padding-top: 10px;
-  font-size: 2.75rem;
-  font-weight: normal;
-}
-#contact h4 {
-  padding-bottom: 25px;
-  font-weight: 400;
-}
-#contact .heading-underline {
-  width: 5rem;
-  height: 0.1rem;
-  background-color: white;
-  margin: 1rem auto;
-}
-/*============= FOOTER  =============*/
-footer{
-  margin-top:0;
-  background-color: black;
-  color:ghostwhite;
-}
+    background-color:#73808a;
+    color:ghostwhite;
+    margin:0;
+    padding: 20px 0 30px 0;
+  }
+  
+  .contact-title {
+    padding-top:50px;
+    font-size: 2.10rem;
+    font-weight: normal;
+    
+  }
+  
+  #contact h4 {
+    padding-bottom: 25px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #contact .heading-underline {
+    width: 5rem;
+    height: 0.2rem;
+    background-color: #8cbfc4;
+    margin: 1rem auto;
+  }
+  
+  /*===== FOOTER =====*/
+  footer {
+    margin-top: 0;
+    background-color:#73808a;
+    color: ghostwhite;
+  }
 
-/*============= MEDIA QUERIES =============*/
+
+/******** Media Queries *******/
 
 /*---Small (sm) devices (landscape phones, 576px and up)----*/
-@media (min-width: 576px) {
-  
-}
-
 /*----Medium (md) devices (tablets, 768px and up)----*/
 @media (min-width: 768px) {
   .header-two {
@@ -320,102 +361,109 @@ footer{
     margin: auto;
   }
 }
-
 /*---Large (lg) devices (desktops, 992px and up)---*/
 @media (min-width: 992px) {
+  /** nav **/
+  .navbar {
+    background-color: #73808a;
+    padding: 2px 10px;
+  }
+
+  .andover-logo {
+    width:85%;
+    padding:0 0 0 100px;
+    
+  }
+  .navbar-nav .nav-link:hover {
+    color: #3e3127 !important ;
+    transition-duration: 0.7s;
+  }
+
+  .nav-item {
+    padding-left: 12px;
+  }
+  .nav-link {
+    color: ghostwhite !important;
+    position: relative;
+    font-size: 1.05rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  /*** hero ***/
   .header-one {
     display: none;
   }
+
   .header-two {
     display: block;
     position: relative;
     width: 100%;
-    height:auto;
-    padding-top:66px;
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 100px;
   }
-  .title{
-    font-size:3rem;
-    text-align:center;
-    
+  .heading-underline {
+    width: 5rem;
+    height: 0.25rem;
+    background-color: #111111;
+    margin: 1rem auto 5rem auto;
+  }
+  .title {
+    font-size: 3rem;
+    text-align: center;
   }
   .carousel {
+    -webkit-transition-duration: 0.8s ease;
     transition-duration: 0.8s ease;
   }
-  /** nav **/
-  .navbar {
-    padding: 2px 25px;
+  #hero {
+    background-color: #8cbfc4;
+    min-height: 100vh;
+    padding-bottom: 50px;
   }
-  .navbar-nav .nav-link:hover {
-    color: black;
-  }
-  .nav-link {
-    position: relative;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-
-  .nav-link::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    background-color: black;
-    width: 100%;
-    height: 2px;
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform 650ms;
-  }
-
-  .nav-link:hover::before {
-    transform: scaleX(1);
-  }
-  .andover-logo{
-    width:225px;
-   }
-   
-
-  /*--heading--*/
-
-  .head-hide {
-    display: none;
+  .header-two h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 30px;
+    font-family: "Tangerine", cursive;
   }
   .pad-xy {
     padding: 3px 3px;
   }
-
+  .bottom {
+    padding: 3px 3px 0 3px;
+  }
   .arrow {
     text-align: center;
     padding-top: 2.5rem;
   }
   .hr-line {
-    margin: 70px 0;
+    margin: 20px 0;
   }
   #myBtn {
     bottom: 20px;
     right: 20px;
-    opacity:1.0;
+    opacity: 1;
   }
-
-/*-- portfolio --*/
-.img-cov{
-  width:100%;
-  
-}
-/*-- about --*/
-.location{
-  border-left: 2px solid black;
-}
-
-/*-- contact --*/
-#contact h4 {
-  padding-bottom: 75px;
-  font-weight: 300;
-}
-
+  #locations{
+    background-color:#8cbfc4;
+    padding-top: 30px;
+  }
+  /*about*/
+  .locate-bottom{
+    background-color:whitesmoke;
+  }
+  /**career**/
+  .img-hide {
+    display: block;
+  }
 }
 /*---Extra (xl) large devices (large desktops, 1200px and up)----*/
 @media (min-width: 1200px) {
-  
-  
-}
+    .navbar {
+      
+      padding: 0px 10px;
+    }
+    
+  }
