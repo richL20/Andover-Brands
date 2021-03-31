@@ -84,10 +84,10 @@ h2 {
 }
 
 /******** Nav *********/
-.nav-logo {
-  width: 200px;
-}
-
+.andover-logo {
+    width: 70%;
+    padding:0;
+  }
 .navbar {
   background-color: #73808a;
 }
