@@ -170,6 +170,7 @@ h2 {
 
 }
 
+
 #portfolio h4{
   color:#646569;
   padding-bottom: 10px;
@@ -187,35 +188,24 @@ h2 {
   margin: 15px 0;
 }
 .ret-btn {
-  position: relative;
-  overflow: hidden;
-  background-color:#2d3945;
-  color: ghostwhite !important;
-  margin-left: 20px;
-  text-decoration: none;
+  background-color: #2d3945;
+  color:white;
   border-radius: 50px;
-  padding: 8px 15px;
+  padding: 6px 20px;
   white-space: nowrap;
-  font-size: 14px;
+  transition: 0.3s;
+  font-size:.95rem;
   
 }
-.whl-btn:hover,
-.ret-btn:hover {
-  background-color: #c0c4c7 !important;
-  color: black !important;
-  transition-duration: 0.7s;
-  text-decoration: none;
-}
+
 .whl-btn {
-  position: relative;
-  overflow: hidden;
-  background-color:#aab8c5;
-  color:black !important;
-  margin-left: 20px;
+  background-color: #2d3945;
+  color:white;
   border-radius: 50px;
-  padding: 8px 15px;
+  padding: 6px 20px;
   white-space: nowrap;
-  font-size: 14px;
+  transition: 0.3s;
+  font-size:.95rem;
   
 }
 .btns{
