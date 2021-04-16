@@ -1,4 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@500&family=Poppins:wght@400&family=Tangerine:wght@700&display=swap");
+@font-face {
+  font-family:Kiona;
+  src: url(../fonts/Kiona-SemiBold.ttf);
+}
+@font-face {
+  font-family:Meta;
+  src: url(../fonts/METAPLUSBOOK-ROMAN.TTF);
+}
 
 /******** Universal *********/
 html {
@@ -7,7 +14,8 @@ html {
 }
 body {
   background-color:white;
-  font-family: "Roboto", sans-serif;
+  font-family: meta;
+  letter-spacing: 1px;
 }
 .offset:before {
   content: "";
@@ -21,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Catamaran", sans-serif;
+  font-family:Kiona;
 }
 
 h1,
@@ -32,14 +40,19 @@ h2 {
 .heading-underline {
   width: 3rem;
   height: 0.25rem;
-  background-color: #111111;
+  background-color:#c0c4c7;
   margin: 1rem auto 5rem auto;
 }
-
+.heading-underline-yellow {
+  width: 3rem;
+  height: 0.25rem;
+  background-color:#e3dabb;
+  margin: 1rem auto 5rem auto;
+}
 .sub-underline {
   width: 2.5rem;
   height: 0.2rem;
-  background-color: #111111;
+  background-color:#c0c4c7;
   margin: 1rem auto 2rem auto;
 }
 
@@ -153,12 +166,12 @@ h2 {
   display: block;
   padding: 150px 0 50px 0;
   min-height: 100vh;
-  background-color: #eee;
+  background-color:White;
 
 }
 
 #portfolio h4{
-  color:#666;
+  color:#646569;
   padding-bottom: 10px;
   font-size: 1.6rem;
   
@@ -170,21 +183,25 @@ h2 {
 
 
 .hr-line {
-  border-top: 3px solid #111;
+  border-top: 3px solid #d9d9d6;
   margin: 15px 0;
 }
 .ret-btn {
   position: relative;
   overflow: hidden;
-  background-color:#111;
+  background-color:#2d3945;
   color: ghostwhite !important;
-  border: 2px solid#111;
   margin-left: 20px;
   text-decoration: none;
+  border-radius: 50px;
+  padding: 8px 15px;
+  white-space: nowrap;
+  font-size: 14px;
+  
 }
 .whl-btn:hover,
 .ret-btn:hover {
-  background-color: #73808A !important;
+  background-color: #c0c4c7 !important;
   color: black !important;
   transition-duration: 0.7s;
   text-decoration: none;
@@ -192,10 +209,14 @@ h2 {
 .whl-btn {
   position: relative;
   overflow: hidden;
-  background-color:ghostwhite;
-  color:#111 !important;
-  border: 2px solid #111;
+  background-color:#aab8c5;
+  color:black !important;
   margin-left: 20px;
+  border-radius: 50px;
+  padding: 8px 15px;
+  white-space: nowrap;
+  font-size: 14px;
+  
 }
 .btns{
   display: inline-block;
@@ -205,12 +226,12 @@ h2 {
   min-height: 100vh;
   width: 100%;
   padding: 150px 0 0 0;
-  background-color:#8cbfc4;
+  background-color:ghostwhite;
 
 }
 address{
   text-align: left;
-  font-weight:600;
+  font-weight:500;
 }
 
 .hr-about {
@@ -218,7 +239,7 @@ address{
 }
 .card{
   border: none;
-  background-color:white;
+  background-color:#aab8c5;
   color: black;
 }
 .card{
@@ -228,7 +249,10 @@ address{
 .card:hover{
 box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
 }
-
+.img-thumbnail{
+  background-color:#aab8c5 !important;
+  padding:5px;
+}
 /*===== BRANDS =====*/
 #brands {
   min-height: 100vh;
@@ -236,7 +260,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
   padding: 150px 0 100px 0;
 }
 #brands{
-  background-color:#eee;
+  background-color:#aab8c5;
   margin-bottom: 0;
   
   }
@@ -247,17 +271,31 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
 
 /*===== NEWS =======*/
 #news{
-  background-color: #e5e5e5;
+  background-color:white;
   width:100%;
   min-height: 100vh;
   padding:150px 0 100px 0;
 }
 #news .card-body{
   text-align: center;
+  background-color:#aab8c5 !important;
+  font-family: meta;
 }
+
 .card-footer{
   border:none;
-  background-color: white !important;
+  background-color:#aab8c5 !important;
+}
+
+.news-btn{
+  background-color: #2d3945;
+  color:white;
+  border-radius: 50px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 16px;
+  
 }
 
 /******** Careers ******/
@@ -265,6 +303,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
   width: 100%;
  min-height: 100vh;
   padding: 150px 0 100px 0;
+  background-color: ghostwhite;
   
 }
 .img-hide {
@@ -273,8 +312,8 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
 
 /*===== CONTACT =====*/
 #contact {
-    background-color:#73808a;
-    color:ghostwhite;
+    background-color:#2d3945;
+    color:white;
     margin:0;
     padding: 20px 0 30px 0;
   }
@@ -295,15 +334,15 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
   #contact .heading-underline {
     width: 5rem;
     height: 0.2rem;
-    background-color: #8cbfc4;
+    background-color:#aab8c5;
     margin: 1rem auto;
   }
   
   /*===== FOOTER =====*/
   footer {
     margin-top: 0;
-    background-color:#73808a;
-    color: ghostwhite;
+    background-color:#2d3945;
+    color:white;
   }
 
 
@@ -324,17 +363,17 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
 @media (min-width: 992px) {
   /** nav **/
   .navbar {
-    background-color: #73808a;
+    background-color:white;
     padding: 2px 10px;
   }
 
   .andover-logo {
-    width:85%;
-    padding:0 0 0 100px;
+    width:69%;
+    padding:5px 0 5px 100px;
     
   }
   .navbar-nav .nav-link:hover {
-    color: #3e3127 !important ;
+    color:#C0C4c7 !important ;
     transition-duration: 0.7s;
   }
 
@@ -342,7 +381,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
     padding-left: 12px;
   }
   .nav-link {
-    color: ghostwhite !important;
+    color:#2d3945 !important;
     position: relative;
     font-size: 1.05rem;
     font-weight: 500;
@@ -359,13 +398,13 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding-top: 80px;
+    padding-top: 75px;
     padding-bottom: 100px;
   }
   .heading-underline {
     width: 5rem;
     height: 0.25rem;
-    background-color: #111111;
+  
     margin: 1rem auto 5rem auto;
   }
   .title {
@@ -377,15 +416,15 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
     transition-duration: 0.8s ease;
   }
   #hero {
-    background-color: #8cbfc4;
+    background-color:#aab8c5;
     min-height: 100vh;
     padding-bottom: 50px;
   }
   .header-two h1 {
-    font-size: 3rem;
+    font-size: 2.25rem;
     text-align: center;
     padding-top: 30px;
-    font-family: "Tangerine", cursive;
+    font-family:Kiona;
   }
   .pad-xy {
     padding: 3px 3px;
@@ -406,7 +445,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
     opacity: 1;
   }
   #locations{
-    background-color:#8cbfc4;
+    background-color:ghostwhite;
     padding-top: 30px;
   }
   /*about*/
