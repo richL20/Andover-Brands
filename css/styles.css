@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
 @font-face {
   font-family: Kiona;
   src: url(../fonts/Kiona-SemiBold.ttf);
@@ -95,7 +96,7 @@ h2 {
 }
 
 .fab:hover {
-  color: #aeb5b8 !important;
+  opacity: .5;
   -webkit-transition-duration: 0.7s;
           transition-duration: 0.7s;
 }
@@ -124,6 +125,7 @@ h2 {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
 }
 
 /******** Hero ********/
@@ -194,18 +196,24 @@ h2 {
   display: block;
   padding: 150px 0 50px 0;
   min-height: 100vh;
-  background-color: White;
+  background-color: ghostwhite;
+}
+
+.cover {
+  width: 85%;
+  height: auto;
 }
 
 #portfolio h4 {
   color: #646569;
   padding-bottom: 10px;
-  font-size: 1.6rem;
+  font-size: 1.75rem;
 }
 
 #portfolio p {
-  color: #121212;
+  color: black;
   font-size: 1.15rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hr-line {
@@ -225,7 +233,7 @@ h2 {
 }
 
 .whl-btn {
-  background-color: #2d3945;
+  background-color: black;
   color: white;
   border-radius: 50px;
   padding: 6px 20px;
@@ -244,7 +252,7 @@ h2 {
   min-height: 100vh;
   width: 100%;
   padding: 150px 0 0 0;
-  background-color: ghostwhite;
+  background-color: white;
 }
 
 address {
@@ -253,12 +261,12 @@ address {
 }
 
 .hr-about {
-  border-top: 1px solid black;
+  border-top: 2px solid black;
 }
 
 .card {
   border: none;
-  background-color: #aab8c5;
+  background-color: white;
   color: black;
 }
 
@@ -273,11 +281,6 @@ address {
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 5px 9px rgba(0, 0, 0, 0.06);
 }
 
-.img-thumbnail {
-  background-color: #aab8c5 !important;
-  padding: 5px;
-}
-
 /*===== BRANDS =====*/
 #brands {
   min-height: 100vh;
@@ -286,7 +289,7 @@ address {
 }
 
 #brands {
-  background-color: #aab8c5;
+  background-color: ghostwhite;
   margin-bottom: 0;
 }
 
@@ -300,7 +303,7 @@ address {
 
 #news .card-body {
   text-align: center;
-  background-color: #aab8c5 !important;
+  background-color: white !important;
   font-family: meta;
 }
 
@@ -432,7 +435,7 @@ footer {
     transition-duration: 0.8s ease;
   }
   #hero {
-    background-color: #aab8c5;
+    background-color: white;
     min-height: 100vh;
     padding-bottom: 50px;
   }
@@ -461,7 +464,7 @@ footer {
     opacity: 1;
   }
   #locations {
-    background-color: ghostwhite;
+    background-color: white;
     padding-top: 30px;
   }
   /*about*/
