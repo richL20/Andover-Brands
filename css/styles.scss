@@ -81,7 +81,7 @@ h2 {
 }
 .fab {
   color: #111 !important;
-  font-size: 1.65rem;
+  font-size: 1.45rem;
   cursor: pointer;
 }
 .fab:hover {
@@ -114,14 +114,18 @@ h2 {
 }
 /******** Hero ********/
 .header-one {
+  background-image: url(../img/mobile-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #cccccc;
-  padding-top: 100px;
-  min-height: 100vh;
+ 
+  height:100vh;
+ 
 }
 .header-one h2 {
   font-size: 2rem;
   font-weight: 300;
-  padding: 50px 20px 0 20px;
+  margin-top:60%;
 }
 
 .phone-header {
@@ -171,10 +175,6 @@ h2 {
 
 }
 
-.cover{
-  width:85%;
-  height:auto;
-}
 
 #portfolio h4{
   color:#646569;
@@ -189,6 +189,12 @@ h2 {
   
 }
 
+.cover{
+  width:65%;
+  height:auto;
+  margin:auto;
+}
+
 
 .hr-line {
   border-top: 3px solid #d9d9d6;
@@ -198,10 +204,10 @@ h2 {
   background-color: #2d3945;
   color:white;
   border-radius: 50px;
-  padding: 6px 20px;
+  padding: 6px 18px;
   white-space: nowrap;
   transition: 0.3s;
-  font-size:.95rem;
+  font-size:.90rem;
   
 }
 
@@ -209,10 +215,10 @@ h2 {
   background-color:black;
   color:white;
   border-radius: 50px;
-  padding: 6px 20px;
+  padding: 6px 18px;
   white-space: nowrap;
   transition: 0.3s;
-  font-size:.95rem;
+  font-size:.90rem;
   
 }
 .btns{
@@ -224,6 +230,7 @@ h2 {
   width: 100%;
   padding: 150px 0 0 0;
   background-color:white;
+  margin-bottom: 100px;
 
 }
 address{
@@ -393,7 +400,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
     width: 100%;
     min-height: 100vh;
     padding-top: 75px;
-    padding-bottom: 100px;
+    
   }
   .heading-underline {
     width: 5rem;
@@ -430,9 +437,6 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
     text-align: center;
     padding-top: 2.5rem;
   }
-  .hr-line {
-    margin: 20px 0;
-  }
   #myBtn {
     bottom: 20px;
     right: 20px;
@@ -443,6 +447,11 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
     padding-top: 30px;
   }
   /*about*/
+
+.cover{
+  width:85%;
+  height:auto;
+}
 
   /**career**/
   .img-hide {
