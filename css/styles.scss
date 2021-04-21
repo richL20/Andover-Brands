@@ -1,21 +1,15 @@
-@font-face {
-  font-family:Kiona;
-  src: url(../fonts/Kiona-SemiBold.ttf);
-}
-@font-face {
-  font-family:Meta;
-  src: url(../fonts/METAPLUSBOOK-ROMAN.TTF);
-}
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Libre+Baskerville&family=Poppins&display=swap');
 /******** Universal *********/
 html {
   padding: env(safe-area-inset);
   scroll-behavior: smooth;
+  
+  
 }
 body {
-  background-color:white;
-  font-family: meta;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
+
 }
 .offset:before {
   content: "";
@@ -23,36 +17,38 @@ body {
   margin-top: -62px;
   display: block;
 }
-h1,
-h2,
+
 h3,
 h4,
 h5,
 h6 {
-  font-family:Kiona;
+  font-family: 'Heebo', sans-serif;
+  
 }
-
 h1,
 h2 {
-  letter-spacing: 2px;
+  
   text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .heading-underline {
   width: 3rem;
   height: 0.25rem;
-  background-color:#c0c4c7;
+  background-color:#999;
   margin: 1rem auto 5rem auto;
 }
 .heading-underline-yellow {
   width: 3rem;
   height: 0.25rem;
-  background-color:#e3dabb;
+  background-color:#8cbfc4;
   margin: 1rem auto 5rem auto;
 }
 .sub-underline {
   width: 2.5rem;
   height: 0.2rem;
-  background-color:#c0c4c7;
+  background-color:#999;
   margin: 1rem auto 2rem auto;
 }
 
@@ -168,16 +164,27 @@ h2 {
 
 /******** Portfolio *****/
 #portfolio {
+  background-color: ghostwhite;
   display: block;
   padding: 150px 0 50px 0;
   min-height: 100vh;
-  background-color:ghostwhite;
+  
 
+}
+#portfolio .title {
+  font-size: 3rem;
+  text-align: center;
+}
+#portfolio h2{
+  color:black;
+  font-size: 2.25rem ;
+  text-align: left;
+  
 }
 
 
 #portfolio h4{
-  color:#646569;
+  color:#1c4966;
   padding-bottom: 10px;
   font-size: 1.75rem;
   
@@ -185,7 +192,7 @@ h2 {
 #portfolio p{
   color:black;
   font-size: 1.15rem;
-  font-family: 'Poppins', sans-serif;
+  
   
 }
 
@@ -229,7 +236,7 @@ h2 {
   min-height: 100vh;
   width: 100%;
   padding: 150px 0 0 0;
-  background-color:white;
+  
   margin-bottom: 100px;
 
 }
@@ -256,15 +263,13 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
 
 /*===== BRANDS =====*/
 #brands {
-  min-height: 100vh;
+  background-color: #8cbfc4;
+  color:white;
+
   width: 100%;
-  padding: 150px 0 100px 0;
+  padding: 100px 0 100px 0;
 }
-#brands{
-  background-color:ghostwhite;
-  margin-bottom: 0;
-  
-  }
+
 
 
 
@@ -285,7 +290,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
 
 .card-footer{
   border:none;
-  background-color:#aab8c5 !important;
+  background-color:#8cbfc4 !important;
 }
 
 .news-btn{
@@ -369,7 +374,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
   }
 
   .andover-logo {
-    width:69%;
+    width:80%;
     padding:5px 0 5px 100px;
     
   }
@@ -390,16 +395,20 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
     letter-spacing: 2px;
   }
   /*** hero ***/
+  
   .header-one {
     display: none;
   }
+  
 
   .header-two {
+    
+    color:white;
     display: block;
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding-top: 75px;
+    padding:90px 0 50px 0;
     
   }
   .heading-underline {
@@ -409,33 +418,29 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
     margin: 1rem auto 5rem auto;
   }
   .title {
-    font-size: 3rem;
-    text-align: center;
+    font-size:2.5rem;
+    
   }
   .carousel {
     -webkit-transition-duration: 0.8s ease;
     transition-duration: 0.8s ease;
   }
   #hero {
-    background-color:white;
+    background-color: #8cbfc4;
     min-height: 100vh;
     padding-bottom: 50px;
   }
-  .header-two h1 {
-    font-size: 2.25rem;
+  .title-1 {
+    font-size:1.75rem;
     text-align: center;
-    padding-top: 30px;
-    font-family:Kiona;
+    
+    
   }
   .pad-xy {
     padding: 3px 3px;
   }
   .bottom {
     padding: 3px 3px 0 3px;
-  }
-  .arrow {
-    text-align: center;
-    padding-top: 2.5rem;
   }
   #myBtn {
     bottom: 20px;
@@ -449,7 +454,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
   /*about*/
 
 .cover{
-  width:85%;
+  width:90%;
   height:auto;
 }
 
