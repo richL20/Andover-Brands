@@ -42,7 +42,7 @@ h2 {
 .heading-underline-yellow {
   width: 3rem;
   height: 0.25rem;
-  background-color: #8cbfc4;
+  background-color: #e3dabb;
   margin: 1rem auto 5rem auto;
 }
 
@@ -184,7 +184,6 @@ h2 {
 
 /******** Portfolio *****/
 #portfolio {
-  background-color: ghostwhite;
   display: block;
   padding: 150px 0 50px 0;
   min-height: 100vh;
@@ -307,7 +306,7 @@ address {
 
 .card-footer {
   border: none;
-  background-color: #8cbfc4 !important;
+  background-color: #aab8c5 !important;
 }
 
 .news-btn {
@@ -417,7 +416,7 @@ footer {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 90px 0 50px 0;
+    padding-top: 85px;
   }
   .heading-underline {
     width: 5rem;
@@ -426,6 +425,7 @@ footer {
   }
   .title {
     font-size: 2.5rem;
+    text-align: center;
   }
   .carousel {
     -webkit-transition-duration: 0.8s ease;
@@ -436,9 +436,10 @@ footer {
     min-height: 100vh;
     padding-bottom: 50px;
   }
-  .title-1 {
-    font-size: 1.75rem;
+  .header-two h1 {
+    font-size: 2rem;
     text-align: center;
+    padding-top: 30px;
   }
   .pad-xy {
     padding: 3px 3px;
