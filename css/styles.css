@@ -42,7 +42,7 @@ h2 {
 .heading-underline-yellow {
   width: 3rem;
   height: 0.25rem;
-  background-color: #e3dabb;
+  background-color: #8cbfc4;
   margin: 1rem auto 5rem auto;
 }
 
@@ -92,7 +92,7 @@ h2 {
 
 /******** Nav *********/
 .andover-logo {
-  width: 150px;
+  width: 250px;
   padding-left: 0;
 }
 
@@ -103,7 +103,7 @@ h2 {
 }
 
 .navbar {
-  background-color: #73808a;
+  background-color: white;
 }
 
 .nav-link {
@@ -127,9 +127,9 @@ h2 {
 }
 
 .header-one h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 300;
-  margin-top: 60%;
+  padding-top: 65%;
 }
 
 .phone-header {
@@ -184,6 +184,7 @@ h2 {
 
 /******** Portfolio *****/
 #portfolio {
+  background-color: ghostwhite;
   display: block;
   padding: 150px 0 50px 0;
   min-height: 100vh;
@@ -212,7 +213,7 @@ h2 {
 }
 
 .cover {
-  width: 65%;
+  width: 70%;
   height: auto;
   margin: auto;
 }
@@ -287,7 +288,7 @@ address {
   background-color: #8cbfc4;
   color: white;
   width: 100%;
-  padding: 100px 0 100px 0;
+  padding: 150px 0 100px 0;
 }
 
 /*===== NEWS =======*/
@@ -306,7 +307,7 @@ address {
 
 .card-footer {
   border: none;
-  background-color: #aab8c5 !important;
+  background-color: #8cbfc4 !important;
 }
 
 .news-btn {
@@ -387,8 +388,8 @@ footer {
     padding: 2px 10px;
   }
   .andover-logo {
-    width: 80%;
-    padding: 5px 0 5px 100px;
+    width: 75%;
+    padding: 3px 0 3px 80px;
   }
   .navbar-nav .nav-link:hover {
     color: #C0C4c7 !important;
@@ -416,7 +417,7 @@ footer {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding-top: 85px;
+    padding: 90px 0 50px 0;
   }
   .heading-underline {
     width: 5rem;
@@ -425,7 +426,6 @@ footer {
   }
   .title {
     font-size: 2.5rem;
-    text-align: center;
   }
   .carousel {
     -webkit-transition-duration: 0.8s ease;
@@ -436,10 +436,9 @@ footer {
     min-height: 100vh;
     padding-bottom: 50px;
   }
-  .header-two h1 {
-    font-size: 2rem;
+  .title-1 {
+    font-size: 1.75rem;
     text-align: center;
-    padding-top: 30px;
   }
   .pad-xy {
     padding: 3px 3px;
