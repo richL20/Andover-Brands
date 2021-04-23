@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Libre+Baskerville&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400&family=Libre+Baskerville&family=Poppins&display=swap");
 /******** Universal *********/
 html {
   padding: env(safe-area-inset);
@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
 }
 
@@ -21,13 +21,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
 }
 
 h1,
 h2 {
   text-align: center;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -67,7 +67,7 @@ h2 {
   cursor: pointer;
   padding: 10px 15px;
   border-radius: 50%;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 #myBtn:hover {
@@ -85,7 +85,7 @@ h2 {
 }
 
 .fab:hover {
-  opacity: .5;
+  opacity: 0.5;
   -webkit-transition-duration: 0.7s;
           transition-duration: 0.7s;
 }
@@ -114,7 +114,7 @@ h2 {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /******** Hero ********/
@@ -231,7 +231,7 @@ h2 {
   white-space: nowrap;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-size: .90rem;
+  font-size: 0.9rem;
 }
 
 .whl-btn {
@@ -242,7 +242,7 @@ h2 {
   white-space: nowrap;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-size: .90rem;
+  font-size: 0.9rem;
 }
 
 .btns {
@@ -262,13 +262,19 @@ address {
   font-weight: 500;
 }
 
+#about li {
+  font-family: "Poppins", sans-serif;
+  line-height: 2.5rem;
+  list-style-type: circle;
+}
+
 .hr-about {
   border-top: 2px solid black;
 }
 
 .card {
   border: none;
-  background-color: white;
+  background-color: snow;
   color: black;
 }
 
@@ -288,7 +294,11 @@ address {
   background-color: #8cbfc4;
   color: white;
   width: 100%;
-  padding: 150px 0 100px 0;
+  padding: 150px 0;
+}
+
+.brand {
+  width: 85%;
 }
 
 /*===== NEWS =======*/
@@ -343,7 +353,7 @@ address {
 
 .contact-title {
   padding-top: 50px;
-  font-size: 2.10rem;
+  font-size: 2.1rem;
   font-weight: normal;
 }
 
@@ -392,7 +402,7 @@ footer {
     padding: 3px 0 3px 80px;
   }
   .navbar-nav .nav-link:hover {
-    color: #C0C4c7 !important;
+    color: #c0c4c7 !important;
     -webkit-transition-duration: 0.7s;
             transition-duration: 0.7s;
   }
@@ -412,20 +422,16 @@ footer {
     display: none;
   }
   .header-two {
-    color: white;
     display: block;
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 90px 0 50px 0;
+    padding: 82px 0 100px 0;
   }
   .heading-underline {
     width: 5rem;
     height: 0.25rem;
     margin: 1rem auto 5rem auto;
-  }
-  .title {
-    font-size: 2.5rem;
   }
   .carousel {
     -webkit-transition-duration: 0.8s ease;
@@ -437,7 +443,8 @@ footer {
     padding-bottom: 50px;
   }
   .title-1 {
-    font-size: 1.75rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.95rem;
     text-align: center;
   }
   .pad-xy {
@@ -457,7 +464,7 @@ footer {
   }
   /*about*/
   .cover {
-    width: 90%;
+    width: 80%;
     height: auto;
   }
   /**career**/
