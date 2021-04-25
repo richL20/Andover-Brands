@@ -254,14 +254,25 @@ address {
 /*===== BRANDS =====*/
 #brands {
   background-color: #8cbfc4;
-  color: white;
+  color:ghostwhite;
 
   width: 100%;
   padding: 150px 0;
 }
+#brands h3{
+  color:#444;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  font-weight:600;
+}
+#brands li{
+  list-style-type:circle;
+ 
+}
 .brand {
   width: 85%;
 }
+
 
 /*===== NEWS =======*/
 #news {
@@ -431,6 +442,11 @@ footer {
   .cover {
     width: 80%;
     height: auto;
+  }
+
+  /*brands*/
+  .jumbotron{
+    background-color:white;
   }
 
   /**career**/
